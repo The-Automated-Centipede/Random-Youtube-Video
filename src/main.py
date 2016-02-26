@@ -47,7 +47,7 @@ def main():
 # Thanks to this wonderful tutorial http://www.decalage.info/en/python/configparser, this was easy
 def settings():
     settings = {}
-    settings_file = open("/home/django/random-yt/custom/youtube_settings.txt")
+    settings_file = open("custom/youtube_settings.txt")
     for line in settings_file:
         if "#" in line:
             line, comment = line.split("#", 1)
